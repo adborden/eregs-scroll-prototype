@@ -3,14 +3,46 @@ layout: default
 javascript: index.js
 ---
 
-<main class="usa-grid">
-  <div class="usa-width-one-whole">
-    <h1>{{ site.title }}</h1>
-  </div>
+<aside class="sidebar js-sticky-header">
+  <div>Sidebar</div>
+  <div class="expand-toggle">&laquo;&raquo;</div>
+</aside>
+<div id="main-container" class="sidebar-align">
+  <main id="main-content" class="usa-grid">
+    <div class="usa-width-one-whole">
+      <h1>{{ site.title }}</h1>
+    </div>
 
-  <div class="usa-width-one-whole">
-    <p>Welcome to <a href="https://github.com/adborden/jekyll-prototype">Jekyll prototype</a>, a simple toolkit for prototyping websites.</p>
+    <div class="usa-width-one-whole">
+      <h2>§ 2.2 Definitions.</h2>
 
-    <p>We’ve tried to keep this template as simple as possible to get out of your way. You can learn more on our <a href="{{ "/getting-started" | prepend:site.baseurl }}">getting started page</a>. If you're familiar with <a href="https://jekyllrb.com/">Jekyll</a>, edit <code>index.html</code> to get right to work.</p>
+    <p>
+  Commission. Commission means the Federal Election Commission, 999 E Street, NW., Washington, DC 20463.
+    </p>
+
+    <p>
+  b. Commissioner or Member. Commissioner or Member means an individual appointed to the Federal Election Commission pursuant to 52 U.S.C. 30106(a), but does not include a proxy or other designated representative of a Commissioner.
+    </p>
+
+    <p>
+  c. Person. Person means an individual, including employees of the Commission, partnership, corporation, association, or public or private organization, other than an agency of the United States Government.
+    </p>
+
+    <p>
+  d. Meeting.
+    </p>
+
+    <p>
+  1. Meeting means the deliberation of at least four voting members of the Commission in collegia where such deliberations determine or result in the joint conduct or disposition of official Commission business. For the purpose of this section, joint conduct does not include, for example, situations where the requisite number of members is physically present in one place but not conducting agency business as a body (e.g., at a meeting at which one member is giving a speech while a number of other members are present in the audience). A deliberation conducted through telephone or similar communications equipment by means of which all persons participating can hear each other will be considered a meeting under this section.
+    </p>
+
+    <p>
+  2. The term meeting does not include the process of notation voting by circulated memorandum for the purpose of expediting consideration of routine matters. It also does not include deliberations to schedule a meeting, to take action to open or close a meeting, or to release or withhold information, or to change the subject matter of a meeting under 11 CFR 2.5, 2.6 and 2.7.
+    </p>
+    </div>
+
+  </main>
+  <div class="secondary-sidebar js-sticky-header">
+    <div>Secondary sidebar</div>
   </div>
-</main>
+</div>

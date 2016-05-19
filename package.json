@@ -29,6 +29,6 @@
   },
   "homepage": "https://github.com/adborden/uswds-prototype#readme",
   "dependencies": {
-    "uswds": "~0.9.1"
+    "uswds": "^0.9.2"
   }
 }

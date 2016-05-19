@@ -3,3 +3,117 @@
  * Add your custom SASS/SCSS styles here. Looking for plain ol' CSS? Check out
  * `assets/css/custom.css` instead.
  **/
+
+$header-height: 134px;
+$subheader-height: 42px;
+$sidebar-collapsed-width: 4rem;
+$sidebar-expanded-width: 200px;
+
+#navbar .logo {
+  line-height: 1.3; // Glitch with subnav changing header height
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 100%;
+  white-space: nowrap;
+}
+
+#main-header {
+  height: $header-height;
+
+  .subheader {
+  height: $subheader-height;
+  }
+}
+
+body.js-sticky-header--enable {
+  .js-sticky-header--stuck {
+    position: fixed;
+    visibility: visible;
+  }
+
+  .secondary-sidebar.js-sticky-header--stuck {
+    display: none;
+    top: $subheader-height;
+
+    @include media($medium-screen) {
+      display: block;
+    }
+  }
+
+  .sidebar.js-sticky-header--stuck {
+    top: $subheader-height;
+  }
+}
+
+body.js-sidebar-collapse--enable {
+  .sidebar {
+    width: $sidebar-collapsed-width;
+    overflow: hidden;
+  }
+
+  .sidebar-align {
+    margin-left: $sidebar-collapsed-width;
+  }
+}
+
+.js-sticky-header--stuck {
+  position: fixed;
+  top:0;
+  visibility: hidden;
+}
+
+.subheader {
+  color: #fff;
+  background: $color-primary-darkest;
+  padding: 1rem 0;
+  width: 100%;
+  z-index: 1;
+}
+
+.sidebar {
+  background: $color-primary-alt-lightest;
+  bottom: 0;
+  height: 100%;
+  position: absolute;
+  top: $header-height;
+  width: $sidebar-expanded-width;
+
+  &.sidebar--collapsed {
+  }
+
+  .expand-toggle {
+    cursor: pointer;
+    font-size: 2em;
+    float: right;
+  }
+}
+
+.secondary-sidebar {
+  background: $color-secondary-lightest;
+  clear: both;
+  height: auto;
+  position: static;
+  width: auto;
+  min-height: 5em;
+
+  @include media($medium-screen) {
+    bottom: 0;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    top: $header-height;
+    width: 200px;
+  }
+}
+
+
+// Add to elements that should aligned complementary to the sidebars, like the
+// main content area and the footer.
+.sidebar-align {
+  margin-left: $sidebar-collapsed-width;
+  margin-right: 0;
+  @include media($medium-screen) {
+    margin-left: $sidebar-expanded-width;
+    margin-right: 200px; // secondary-sidebar
+  }
+}
