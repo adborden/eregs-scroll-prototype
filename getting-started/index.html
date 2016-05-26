@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Getting started</title>
+  <meta name="description" content="Welcome to USWDS prototype, a simple toolkit for prototyping websites based on the US Web Design Standards.
+">
+
+  <link rel="stylesheet" href="/eregs-scroll-prototype/assets/css/main.css">
+  <link rel="stylesheet" href="/eregs-scroll-prototype/assets/css/custom.css">
+  <link rel="canonical" href="https://adborden.github.io/eregs-scroll-prototype/getting-started/">
+  <script   src="https://code.jquery.com/jquery-2.2.3.min.js"   integrity="sha256-a23g1Nt4dtEYOj7bR+vTu7+T8VP13humZFBJNIYoEJo="   crossorigin="anonymous"></script>
+  <script src="/eregs-scroll-prototype/assets/vendor/uswds.min.js"></script>
+</head>
+
+
+  <body>
+
+    <header id="main-header" class="usa-site-header">
+  <div class="usa-disclaimer">
+    <div class="usa-grid">
+      <span class="usa-disclaimer-official">
+        <img class="usa-flag_icon" alt="U.S. flag signifying that this is a United States federal government website" src="/eregs-scroll-prototype/assets/img/us_flag_small.png">
+        An official website of the United States government
+      </span>
+      <span class="usa-disclaimer-stage">This site is currently in alpha. <a href="https://18f.gsa.gov/dashboard/stages/#alpha">Learn more.</a></span>
+    </div>
+  </div>
+
+  <nav id="navbar" class="usa-site-navbar">
+    <div class="usa-grid">
+      <div class="usa-width-one-half">
+        <h1 class="logo"><a title="Home" aria-label="Home" href="/eregs-scroll-prototype/">eRegs sticky scroll prototype</a></h1>
+      </div>
+      <div class="usa-width-one-half">
+        <ul class="subnav usa-unstyled-list">
+          
+            
+            <li class="subnav_item"><a class="subnav_link" href="/eregs-scroll-prototype/about/">About</a></li>
+            
+          
+            
+            <li class="subnav_item"><a class="subnav_link" href="/eregs-scroll-prototype/getting-started/">Getting started</a></li>
+            
+          
+            
+          
+            
+          
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div class="subheader js-sticky-header js-sticky-header--leader">
+    <div class="usa-grid-full">
+      <div class="usa-width-one-whole">
+        <span>eRegs subheader</span>
+      </div>
+    </div>
+  </div>
+</header>
+
+
+    <main class="usa-grid">
+  <div class="usa-width-one-whole">
+    <h1>Getting started</h1>
+  </div>
+
+  <div class="usa-width-one-whole">
+    <p>You can edit <code class="highlighter-rouge">getting-started.md</code> to change this page. Jekyll understands many
+formats, including markdown and HTML. To change the <a href="/eregs-scroll-prototype/">home page</a>, edit <code class="highlighter-rouge">index.html</code>.</p>
+
+<p>You can add additional pages by copying the <code class="highlighter-rouge">new-page.html</code> template and edit
+the <code class="highlighter-rouge">published</code> attribute in the front matter:</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>---
+layout: default
+title: Your new page
+permalink: /new-page/
+published: true
+---
+</code></pre>
+</div>
+
+<h2 id="sassscss">SASS/SCSS</h2>
+
+<p>Jekyll uses <a href="http://sass-lang.com/">SASS/SCSS</a> to create CSS. You can add your
+own styles to <code class="highlighter-rouge">_sass/_custom.scss</code>.</p>
+
+<p>Not familiar with SCSS? No problem, you can just write CSS to <code class="highlighter-rouge">assets/css/custom.css</code></p>
+
+<h2 id="javascript">Javascript</h2>
+
+<p>The index page loads <code class="highlighter-rouge">assets/js/index.js</code>. Other pages don’t load anything by
+default. You can add the <code class="highlighter-rouge">javascript</code> to a page’s front matter to load a specific
+file, e.g.</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>---
+layout: page
+title: Getting started
+javascript: getting-started.js
+---
+</code></pre>
+</div>
+
+<p>Will load <code class="highlighter-rouge">assets/js/getting-started.js</code>.</p>
+
+<h2 id="helpful-resources">Helpful resources</h2>
+
+<p>If you have trouble, start with the <a href="https://jekyllrb.com/docs/home/">Jekyll
+documentation</a> which is the main technology
+behind this project.</p>
+
+<p>If you’re really stuck, you can reach out to us by <a href="https://github.com/adborden/uswds-prototype">opening an
+issue</a> on github.</p>
+
+  </div>
+</main>
+
+
+    <footer class="usa-footer usa-footer-slim usa-sans sidebar-align" role="contentinfo">
+    <div class="usa-grid usa-footer-return-to-top">
+      <a href="#">Return to top</a>
+    </div>
+    <div class="usa-footer-primary-section">
+      <div class="usa-grid-full">
+        <nav class="usa-footer-nav usa-width-two-thirds">
+          <ul class="usa-unstyled-list">
+            
+              
+              <li class="usa-width-one-fourth usa-footer-primary-content">
+                <a class="usa-footer-primary-link" href="/eregs-scroll-prototype/about/">About</a>
+              </li>
+              
+            
+              
+              <li class="usa-width-one-fourth usa-footer-primary-content">
+                <a class="usa-footer-primary-link" href="/eregs-scroll-prototype/getting-started/">Getting started</a>
+              </li>
+              
+            
+              
+            
+              
+            
+          </ul>
+        </nav>
+        <div class="usa-width-one-sixth usa-footer-primary-content">
+          <p>(800) CALL-GOVT</p>
+        </div>
+        <div class="usa-width-one-sixth usa-footer-primary-content">
+          <a href="mailto:info@agency.gov">info@agency.gov</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="usa-footer-secondary_section">
+      <div class="usa-grid">
+        <div class="usa-footer-logo">
+          <img class="usa-footer-slim-logo-img" src="/eregs-scroll-prototype/assets/img/logo-img.png" alt="Logo image">
+          <h3 class="usa-footer-slim-logo-heading">Name of Agency</h3>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+    
+  </body>
+
+</html>
